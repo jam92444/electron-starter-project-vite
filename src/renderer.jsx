@@ -1,16 +1,13 @@
-
 import { createRoot } from "react-dom/client";
-
-
-const App =()=>{
-  return (
-    <h1>Hello from react</h1>
-  )
-}
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
 
 const container = document.getElementById("root");
 
 const root = createRoot(container);
 
-
-root.render(<App/>)
+root.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
